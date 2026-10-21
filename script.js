@@ -1,3 +1,17 @@
+// Cartel modal lightbox
+document.querySelectorAll('.cartel-clickable').forEach(img => {
+  img.addEventListener('click', function() {
+    const modal = document.getElementById('cartel-modal');
+    const modalImg = document.getElementById('cartel-modal-img');
+    modal.style.display = 'flex';
+    modalImg.src = this.src;
+  });
+});
+
+document.getElementById('cartel-modal').addEventListener('click', function() {
+  this.style.display = 'none';
+});
+
 // Hamburger menu
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("navMenu");
