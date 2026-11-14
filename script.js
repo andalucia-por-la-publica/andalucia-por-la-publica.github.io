@@ -8,7 +8,7 @@ document.querySelectorAll('.cartel-clickable').forEach(img => {
   });
 });
 
-document.getElementById('cartel-modal').addEventListener('click', function() {
+document.getElementById('cartel-modal')?.addEventListener('click', function() {
   this.style.display = 'none';
 });
 

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asamblea abierta 21N en Antequera - Asamblea Andaluza por la Educación Pública</title>
+    <meta
+      name="description"
+      content="Después de la huelga del 11N, la lucha por la educación pública continúa. Asamblea abierta el 21 de noviembre a las 10:00 en la sede de CGT de Antequera."
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .hero {
+        background: linear-gradient(135deg, var(--verde-oscuro) 0%, var(--verde-principal) 100%);
+        color: white;
+        border-left: none;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+      }
+      .hero h2 { color: #F4C430; font-size: clamp(2.5rem, 9vw, 5rem); line-height: 1.05; margin: 0.5rem 0; border: none; letter-spacing: 1px; }
+      .hero p { color: white; margin: 0.5rem 0; }
+      .hero .fecha { font-size: clamp(6rem, 24vw, 11rem); font-weight: 900; color: #F4C430; line-height: 1; letter-spacing: 2px; margin: 0; }
+      .hero .lema { font-size: clamp(1.4rem, 4.5vw, 2.4rem); font-weight: 900; line-height: 1.2; }
+      .hero .esperamos { font-size: clamp(2.2rem, 8vw, 4rem); font-weight: 900; letter-spacing: 2px; line-height: 1.1; }
+      .hero .corazones { font-size: clamp(1.8rem, 6vw, 3rem); letter-spacing: 0.3rem; }
+      .btn {
+        display: inline-block;
+        padding: 0.85rem 1.6rem;
+        margin: 0.5rem;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        background: #F4C430;
+        color: #333 !important;
+        border: none !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .btn:hover { transform: translateY(-3px); box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25); }
+      .btn-verde { background: var(--verde-principal); color: white !important; }
+      .datos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        margin: 1rem 0;
+      }
+      .dato {
+        background: white;
+        border-radius: 10px;
+        padding: 1rem;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(31, 122, 61, 0.12);
+      }
+      .dato .icono { font-size: 2rem; }
+      .dato strong { display: block; color: var(--verde-principal); }
+      .orden-del-dia { list-style: none; counter-reset: punto; padding: 0; }
+      .orden-del-dia li {
+        counter-increment: punto;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background: white;
+        border-radius: 10px;
+        padding: 0.75rem 1rem;
+        margin-bottom: 0.6rem;
+        box-shadow: 0 1px 4px rgba(31, 122, 61, 0.1);
+      }
+      .orden-del-dia li::before {
+        content: counter(punto);
+        flex: 0 0 2.2rem;
+        height: 2.2rem;
+        border-radius: 50%;
+        background: var(--verde-principal);
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .centro { text-align: center; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        id="logo"
+        src="../logo.png"
+        width="220"
+        height="220"
+        alt="Logo de la Asamblea Andaluza por la Educación Pública"
+      />
+      <h1>Asamblea Andaluza por la Educación Pública</h1>
+    </header>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="../como-participar.html">Cómo participar</a></li>
+          <li><a href="../como-nos-organizamos.html">Cómo nos organizamos</a></li>
+          <li><a href="../que-pedimos.html">Qué pedimos</a></li>
+          <li><a href="../que-hemos-hecho.html">Qué hemos hecho</a></li>
+          <li><a href="../hacia-donde-vamos.html">Hacia dónde vamos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero" id="asamblea-21n">
+        <p class="lema">DESPUÉS DE LA HUELGA DEL 11N, LA LUCHA POR LA EDUCACIÓN PÚBLICA CONTINÚA</p>
+        <p class="fecha">21N</p>
+        <h2>ASAMBLEA ABIERTA</h2>
+        <p class="esperamos">TE ESPERAMOS</p>
+        <p class="corazones" aria-hidden="true">💚💛💚💛💚💛💚</p>
+      </section>
+
+      <section id="cuando-donde">
+        <h3>Cuándo y dónde</h3>
+        <div class="datos">
+          <div class="dato">
+            <span class="icono">📅</span>
+            <strong>Cuándo</strong>
+            Sábado 21 de noviembre de 2026
+          </div>
+          <div class="dato">
+            <span class="icono">🕙</span>
+            <strong>Hora</strong>
+            10:00 h
+          </div>
+          <div class="dato">
+            <span class="icono">📍</span>
+            <strong>Dónde</strong>
+            Sede de CGT de Antequera<br />Calle Fresca, 20
+          </div>
+        </div>
+        <p class="centro">
+          <a class="btn btn-verde" href="https://maps.app.goo.gl/MtsJYfMHBbCGNVqLA" target="_blank" rel="noopener">🗺️ Ver en Google Maps</a>
+        </p>
+      </section>
+
+      <section id="orden-del-dia">
+        <h3>Orden del día de la próxima asamblea general</h3>
+        <ol class="orden-del-dia">
+          <li>Valoración 11N y balance de las asambleas provinciales</li>
+          <li>Reestructuración de la coordinadora andaluza</li>
+          <li>Nuevas acciones</li>
+          <li>Elección de representantes para la coordinación con otros territorios del estado español</li>
+          <li>Varios (caja de resistencia, etc.)</li>
+          <li>Próxima asamblea</li>
+          <li>Lectura y aprobación de los acuerdos adoptados en la asamblea</li>
+        </ol>
+      </section>
+
+      <section id="comida">
+        <h3>🍽️ Después de la asamblea, comemos juntas y juntos</h3>
+        <p>
+          Al terminar la asamblea nos quedaremos a comer: <strong>trae comida para compartir</strong>
+          y la ponemos en común. Si prefieres otra opción, hay un bar cerca de la sede.
+        </p>
+      </section>
+
+      <section id="compartir-coche">
+        <h3>🚗 Comparte coche</h3>
+        <p>
+          Vamos a organizar el transporte para compartir coches y que llegue todo el mundo.
+          Apúntate o ofrece plazas en este documento:
+        </p>
+        <p class="centro">
+          <a class="btn btn-verde" href="https://docs.google.com/document/d/1pwg1NdEwZmKAwYN8o_wllF4xICu2AuyTTgutBzqPlP8/edit?usp=sharing" target="_blank" rel="noopener">📝 Documento para compartir coche</a>
+        </p>
+      </section>
+
+      <section id="contacto">
+        <h3>Contacto</h3>
+        <p>
+          ¿Dudas o propuestas?
+          <a href="mailto:asambleaandaluzaporlaeducacion@gmail.com">asambleaandaluzaporlaeducacion@gmail.com</a>
+          ·
+          <a href="https://www.instagram.com/asambleaandedupublica/" target="_blank" rel="noopener">Instagram</a>
+        </p>
+      </section>
+    </main>
+    <script src="../script.js" defer></script>
+  </body>
+</html>
