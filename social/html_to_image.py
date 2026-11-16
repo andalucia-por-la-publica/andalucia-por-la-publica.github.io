@@ -37,7 +37,11 @@ async def main():
     print("Convirtiendo HTMLs a imágenes JPEG...")
     print("=" * 50)
 
+    # Las rutas son relativas a esta carpeta (social/), se ejecute desde donde se ejecute
+    base = Path(__file__).resolve().parent
+
     for html_file, output_file in html_files:
+        html_file, output_file = str(base / html_file), str(base / output_file)
         if os.path.exists(html_file):
             try:
                 await html_to_image(html_file, output_file)
