@@ -244,4 +244,16 @@ p {
     position: sticky;
     top: 0;
   }
+
+  /* Rejillas de botones/columnas: una sola columna en móvil */
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Botones de descarga en línea: uno por fila, a todo el ancho */
+  .btn-row a {
+    display: block !important;
+    margin: 0.5rem 0 !important;
+  }
 }
