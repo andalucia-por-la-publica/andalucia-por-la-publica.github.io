@@ -251,6 +251,60 @@ p {
     gap: 1rem !important;
   }
 
+  /* Tabla de asambleas: cada fila pasa a ser una tarjeta */
+  .tabla-asambleas,
+  .tabla-asambleas tbody,
+  .tabla-asambleas tr,
+  .tabla-asambleas td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabla-asambleas {
+    background: transparent !important;
+  }
+
+  .tabla-asambleas thead {
+    display: none;
+  }
+
+  .tabla-asambleas tr {
+    margin-bottom: 1rem;
+    padding-bottom: 0.6rem;
+    background: white;
+    border: 1px solid var(--verde-principal) !important;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .tabla-asambleas td {
+    border: none !important;
+    padding: 0.4rem 1rem !important;
+  }
+
+  /* Provincia como cabecera de la tarjeta */
+  .tabla-asambleas td[data-label="Provincia"] {
+    background: var(--verde-principal);
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem !important;
+    margin-bottom: 0.3rem;
+  }
+
+  .tabla-asambleas td[data-label]:not([data-label="Provincia"])::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--verde-principal);
+  }
+
+  .tabla-asambleas td.sin-dato {
+    display: none;
+  }
+
   /* Botones de descarga en línea: uno por fila, a todo el ancho */
   .btn-row a {
     display: block !important;
